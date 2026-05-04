@@ -12,9 +12,7 @@
 </head>
 <body>
 
-<!-- Cursor -->
-<div id="cursor"></div>
-<div id="cursor-ring"></div>
+
 
 <!-- Preloader -->
 <div id="preloader">
@@ -172,12 +170,36 @@
 
     <div class="projects-grid">
 
-      <!-- P01 — Intelligent Video Surveillance -->
+      <!-- P01 — Job Portal System -->
       <div class="project-card fi d1">
+        <div class="project-img-wrap">
+          <img src="Job-Portal.jpg" alt="Job Portal System" loading="lazy"
+               onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fa-solid fa-briefcase\'></i></div>'">
+          <div class="project-position">P01 — POLE POSITION</div>
+        </div>
+        <div class="project-body">
+          <div class="project-num">Grand Prix · Full Stack</div>
+          <h3>Job Portal System</h3>
+          <div class="project-tags">
+            <span>Spring Boot</span><span>Java</span><span>MySQL</span><span>JWT</span><span>JavaScript</span>
+          </div>
+          <p>
+            A robust, full-stack Job Portal System featuring role-based access for Job Seekers, Recruiters, and Admins. Built with a secure Spring Boot backend and dynamic frontend.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/bharathts04/Job-Portal" target="_blank">
+              <i class="fa-brands fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- P02 — Intelligent Video Surveillance -->
+      <div class="project-card fi d2">
         <div class="project-img-wrap">
           <img src="P-01.jpg" alt="Intelligent Video Surveillance System" loading="lazy"
                onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fa-solid fa-video\'></i></div>'">
-          <div class="project-position">P01 — VICTORY</div>
+          <div class="project-position">P02 — VICTORY</div>
         </div>
         <div class="project-body">
           <div class="project-num">Grand Prix · AI / Computer Vision</div>
@@ -198,12 +220,12 @@
         </div>
       </div>
 
-      <!-- P02 — E-Commerce MERN -->
-      <div class="project-card fi d2">
+      <!-- P03 — E-Commerce MERN -->
+      <div class="project-card fi d3">
         <div class="project-img-wrap">
           <img src="P-04.jpg" alt="E-Commerce Store" loading="lazy"
                onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fa-solid fa-cart-shopping\'></i></div>'">
-          <div class="project-position">P02 — PODIUM</div>
+          <div class="project-position">P03 — PODIUM</div>
         </div>
         <div class="project-body">
           <div class="project-num">Grand Prix · Full Stack</div>
@@ -224,12 +246,12 @@
         </div>
       </div>
 
-      <!-- P03 — Weather App -->
-      <div class="project-card fi d3">
+      <!-- P04 — Weather App -->
+      <div class="project-card fi d4">
         <div class="project-img-wrap">
           <img src="P-02.jpg" alt="Real-time Weather Application" loading="lazy"
                onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fa-solid fa-cloud-sun\'></i></div>'">
-          <div class="project-position">P03 — POINTS</div>
+          <div class="project-position">P04 — POINTS</div>
         </div>
         <div class="project-body">
           <div class="project-num">Grand Prix · Web App</div>
@@ -252,12 +274,12 @@
         </div>
       </div>
 
-      <!-- P04 — Drum Kit -->
-      <div class="project-card fi d4">
+      <!-- P05 — Drum Kit -->
+      <div class="project-card fi d5">
         <div class="project-img-wrap">
           <img src="P-03.png" alt="Drum Kit" loading="lazy"
                onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fa-solid fa-drum\'></i></div>'">
-          <div class="project-position">P04 — FINISH</div>
+          <div class="project-position">P05 — FINISH</div>
         </div>
         <div class="project-body">
           <div class="project-num">Grand Prix · Interactive</div>
@@ -324,19 +346,6 @@
 </footer>
 
 <script>
-/* ====== CURSOR ====== */
-const cur = document.getElementById('cursor');
-const ring = document.getElementById('cursor-ring');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove', e => {
-  mx=e.clientX; my=e.clientY;
-  cur.style.left=mx+'px'; cur.style.top=my+'px';
-});
-(function tick() {
-  rx += (mx-rx)*0.13; ry += (my-ry)*0.13;
-  ring.style.left=rx+'px'; ring.style.top=ry+'px';
-  requestAnimationFrame(tick);
-})();
 
 /* ====== PRELOADER — LIGHTS OUT ====== */
 window.addEventListener('load', () => {
